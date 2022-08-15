@@ -4,3 +4,6 @@
 - A függvény neve `generateList` legyen!
 - A HTML-template egy lista, amelynek a listaelemei a kapott tömb értékeit tartalmazzák.
 */
+
+'use strict'
+const generateList = tomb => {return '<ul>' + tomb.reduce((acc,item) => { return acc + '<li>' + item + '</li>'},'') + '</ul>'};
